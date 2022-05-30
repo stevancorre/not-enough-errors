@@ -35,5 +35,8 @@
   "devDependencies": {
     "tsup": "^6.0.1",
     "typescript": "^4.7.2"
+  },
+  "dependencies": {
+    "lightsb": "^1.0.10"
   }
 }
