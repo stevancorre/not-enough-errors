@@ -1,4 +1,3 @@
-import { IStringBuilder, StringBuilder } from "lightsb";
 import { BaseError } from "./BaseError";
 
 /**
@@ -12,12 +11,6 @@ export class ArgumentError extends BaseError {
      * @param message The error message
      */
     public constructor(paramName: string, message?: string) {
-        const builder: IStringBuilder = new StringBuilder()
-            .append(message ?? "Got an unexpected argument value")
-            .appendEmptyLine()
-            .append("Parameter name: ")
-            .append(paramName);
-
-        super(builder.toString());
+        super("Parameter name", paramName, message ?? "Got an unexpected argument value");
     }
 }

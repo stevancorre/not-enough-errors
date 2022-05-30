@@ -1,4 +1,3 @@
-import { IStringBuilder, StringBuilder } from "lightsb";
 import { BaseError } from "./BaseError";
 
 /**
@@ -12,12 +11,6 @@ export class FileNotFoundError extends BaseError {
      * @param message The error message
      */
     public constructor(fileName: string, message?: string) {
-        const builder: IStringBuilder = new StringBuilder()
-            .append(message ?? "The provided file cannot be found")
-            .appendEmptyLine()
-            .append("File name: ")
-            .append(fileName);
-
-        super(builder.toString());
+        super("File name", fileName, message  ?? "The provided file cannot be found");
     }
 }

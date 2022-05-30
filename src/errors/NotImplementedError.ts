@@ -12,12 +12,6 @@ export class NotImplementedError extends BaseError {
      * @param message The error message
      */
     public constructor(funcName: string, message?: string) {
-        const builder: IStringBuilder = new StringBuilder()
-            .append(message ?? "The function is not implemented")
-            .appendEmptyLine()
-            .append("Function name: ")
-            .append(funcName);
-
-        super(builder.toString());
+        super("Function name", funcName, message  ?? "The function is not implemented");
     }
 }
