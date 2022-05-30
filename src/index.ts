@@ -1,1 +1,3 @@
-console.log("Ok");
+import { ArgumentError } from "./errors/ArgumentErrors";
+
+export { ArgumentError };
