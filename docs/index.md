@@ -1,5 +1,3 @@
-# Not Enough Errors
-
 ## Table of content
 - [Installation](#installation)
 - [Errors](#errors)
