@@ -1,4 +1,4 @@
-import { ArgumentError } from "./errors/ArgumentErrors";
+import { ArgumentError } from "./errors/ArgumentError";
 import { ArgumentNullError } from "./errors/ArgumentNullError";
 import { ArgumentOutOfRangeError } from "./errors/ArgumentOutOfRangeError";
 import { FileNotFoundError } from "./errors/FileNotFoundError";

@@ -1,4 +1,4 @@
-import { ArgumentError } from "./ArgumentErrors";
+import { ArgumentError } from "./ArgumentError";
 
 /**
  * Thrown when the value of an argument is outside the range of valid values

@@ -1,4 +1,4 @@
-import { ArgumentError } from "./ArgumentErrors";
+import { ArgumentError } from "./ArgumentError";
 
 /**
  * Thrown when null argument is passed to a method
