@@ -1,4 +1,3 @@
-import { IStringBuilder, StringBuilder } from "lightsb";
 import { BaseError } from "./BaseError";
 
 /**
@@ -11,7 +10,7 @@ export class NotImplementedError extends BaseError {
      * @param funcName The name of the function
      * @param message The error message
      */
-    public constructor(funcName: string, message?: string) {
-        super("Function name", funcName, message  ?? "The function is not implemented");
+    public constructor(funcName?: string, message?: string) {
+        super("Function name", funcName, message  ?? "This function is not implemented");
     }
 }
