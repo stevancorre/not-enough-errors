@@ -10,11 +10,14 @@ export abstract class BaseError extends Error {
      * @param labelValue The label value
      * @param message The error message
      */
-    protected constructor(label: string, labelValue: string, message: string) {
+    protected constructor(label: string, labelValue: string | undefined, message: string) {
         const builder: IStringBuilder = new StringBuilder()
             .append(message)
-            .appendEmptyLine()
-            .append(`${label}: ${labelValue}`);
+
+        if(labelValue !== undefined)
+            builder
+                .appendEmptyLine()
+                .append(`${label}: ${labelValue}`);
 
         super(builder.toString());
     }
