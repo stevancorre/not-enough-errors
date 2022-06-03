@@ -1,0 +1,3 @@
+# NEE Contribution
+
+If you realize you need more errors, **other people might need them too !** Then please make a [pull request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests), or let me know by opening an [issue](https://github.com/stevancorre/telegram-psychobot/issues) and I'll add your errors as fast as possible.
