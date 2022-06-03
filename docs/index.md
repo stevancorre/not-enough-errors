@@ -11,14 +11,14 @@ $ npm install not-enough-errors
 
 ## Errors
 
-| Name                                                    | Description                                                                                                     |
-| ------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------- |
-| [ArgumentError](#argument-error)                        | Thrown when a non-null argument that is passed to a method is invalid                                           |
-| [ArgumentNullError](#argument-null-error)               | Thrown when null argument is passed to a method                                                                 |
-| [ArgumentOutOfRangeError](#argument-out-of-range-error) | Thrown when the value of an argument is outside the range of valid values                                       |
-| [FileNotFoundError](#file-not-found-error)              | Thrown when a physical file does not exist at the specified location                                            |
-| [KeyNotFoundError](#key-not-found-error)                | Thrown when the key specified for accessing an element in a collection does not match any key in the collection |
-| [NotImplementedError](#not-implemented-error)           | Thrown when a requested function is not implemented                                                             |
+| Name                                                     | Description                                                                                                     |
+| -------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------- |
+| [ArgumentError](#argument-error-)                        | Thrown when a non-null argument that is passed to a method is invalid                                           |
+| [ArgumentNullError](#argument-null-error-)               | Thrown when null argument is passed to a method                                                                 |
+| [ArgumentOutOfRangeError](#argument-out-of-range-error-) | Thrown when the value of an argument is outside the range of valid values                                       |
+| [FileNotFoundError](#file-not-found-error-)              | Thrown when a physical file does not exist at the specified location                                            |
+| [KeyNotFoundError](#key-not-found-error-)                | Thrown when the key specified for accessing an element in a collection does not match any key in the collection |
+| [NotImplementedError](#not-implemented-error-)           | Thrown when a requested function is not implemented                                                             |
 
 <br>
 
@@ -32,7 +32,7 @@ abstract class BaseError extends Error
 
 <br>
 
-### Argument error
+### Argument error [↑](#errors)
 
 Thrown when a non-null argument that is passed to a method is invalid  
 See an example [here](https://github.com/stevancorre/not-enough-errors/blob/main/examples/ArgumentError.ts)
