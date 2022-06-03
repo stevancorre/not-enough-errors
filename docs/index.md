@@ -49,10 +49,10 @@ class ArgumentError extends BaseError
 public constructor(paramName: string, message?: string)
 ```
 
-| Name        | Type                  | Description                                      |
-| ----------- | --------------------- | ------------------------------------------------ |
-| `paramName` | `string`              | The name of the parameter that causes this error |
-| `message`   | `string \| undefined` | The error message                                |
+| Name        | Type                 | Description                                      |
+| ----------- | -------------------- | ------------------------------------------------ |
+| `paramName` | `string`             | The name of the parameter that causes this error |
+| `message`   | `string | undefined` | The error message                                |
 
 <br>
 
@@ -71,10 +71,10 @@ class ArgumentNullError extends ArgumentError
 public constructor(paramName: string, message?: string)
 ```
 
-| Name        | Type                  | Description                                      |
-| ----------- | --------------------- | ------------------------------------------------ |
-| `paramName` | `string`              | The name of the parameter that causes this error |
-| `message`   | `string \| undefined` | The error message                                |
+| Name        | Type                 | Description                                      |
+| ----------- | -------------------- | ------------------------------------------------ |
+| `paramName` | `string`             | The name of the parameter that causes this error |
+| `message`   | `string | undefined` | The error message                                |
 
 <br>
 
@@ -93,10 +93,10 @@ class ArgumentOutOfRangeError extends ArgumentError
 public constructor(paramName: string, message?: string)
 ```
 
-| Name        | Type                  | Description                                      |
-| ----------- | --------------------- | ------------------------------------------------ |
-| `paramName` | `string`              | The name of the parameter that causes this error |
-| `message`   | `string \| undefined` | The error message                                |
+| Name        | Type                 | Description                                      |
+| ----------- | -------------------- | ------------------------------------------------ |
+| `paramName` | `string`             | The name of the parameter that causes this error |
+| `message`   | `string | undefined` | The error message                                |
 
 <br>
 
@@ -115,10 +115,10 @@ class FileNotFoundError extends BaseError
 public constructor(fileName: string, message?: string)
 ```
 
-| Name       | Type                  | Description                        |
-| ---------- | --------------------- | ---------------------------------- |
-| `fileName` | `string`              | The file name that cannot be found |
-| `message`  | `string \| undefined` | The error message                  |
+| Name       | Type                 | Description                        |
+| ---------- | -------------------- | ---------------------------------- |
+| `fileName` | `string`             | The file name that cannot be found |
+| `message`  | `string | undefined` | The error message                  |
 
 <br>
 
@@ -137,10 +137,10 @@ class KeyNotFoundError extends BaseError
 public constructor(key: string, message?: string)
 ```
 
-| Name      | Type                  | Description                    |
-| --------- | --------------------- | ------------------------------ |
-| `key`     | `string`              | The key that causes this error |
-| `message` | `string \| undefined` | The error message              |
+| Name      | Type                 | Description                    |
+| --------- | -------------------- | ------------------------------ |
+| `key`     | `string`             | The key that causes this error |
+| `message` | `string | undefined` | The error message              |
 
 
 <br>
@@ -160,10 +160,10 @@ class NotImplementedError extends BaseError
 public constructor(fileName: string, message?: string)
 ```
 
-| Name       | Type                  | Description              |
-| ---------- | --------------------- | ------------------------ |
-| `funcName` | `string \| undefined` | The name of the function |
-| `message`  | `string \| undefined` | The error message        |
+| Name       | Type                 | Description              |
+| ---------- | -------------------- | ------------------------ |
+| `funcName` | `string | undefined` | The name of the function |
+| `message`  | `string | undefined` | The error message        |
 
 ## License
 
