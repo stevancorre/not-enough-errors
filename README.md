@@ -26,22 +26,51 @@
 </p>
 
 <p align="center">
-    <a href="#📥-download">Download</a> •
-    <a href="#🏃-usage">Usage</a> •
-    <a href="https://stevancorre.github.io/not-enough-error/">Documentation</a> •
-    <a href="#👑-credits">Credits</a> •
-    <a href="#📝-license">License</a>
+    <a href="#installation">Installation</a> •
+    <a href="#why">Why</a> •
+    <a href="https://github.com/stevancorre/not-enough-errors/tree/main/examples">Examples</a> •
+    <a href="https://stevancorre.github.io/not-enough-errors/">Docs</a> •
+    <a href="#license">License</a> •
+    <a href="#credits">Credits</a>
 </p>
+
+## Installation
+
+```sh
+$ npm install not-enough-errors
+```
 
 <br>
 
-## 📝 License
+## Why
+
+I really think having more descriptive errors is an important thing, and TypeScript/JavaScript is lacking meaningful errors.  
+With this little & simple library, you'll not be forced to write things such as
+```ts
+throw new Error("This function is not implemented");
+```
+But
+```ts
+throw new NotImplementedError("funcName");
+
+/**
+ * stderr:
+ * 
+ * NotImplementedError: This function is not implemented
+ * Function name: funcName
+ */
+```
+With this library, you'll be able to write good error descriptions !
+
+<br>
+
+## License
 
 This project is <a href="https://opensource.org/licenses/MIT">MIT</a> licensed.
 
 <br>
 
-## 👑 Credits
+## Credits
 
 - Icon: <a href="https://www.flaticon.com/free-icons/close" title="close icons">Close icons created by Freepik - Flaticon</a>
 - README design: <a href="https://github.com/amitmerchant1990/electron-markdownify/blob/master/README.md">github.com/amitmerchant1990</a>
